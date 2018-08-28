@@ -1,0 +1,6 @@
+[submodule "sdk-cubic-go"]
+	path = sdk-cubic-go
+	url = https://github.com/cobaltspeech/sdk-cubic-go
+[submodule "sdk-cubic-cpp"]
+	path = sdk-cubic-cpp
+	url = https://github.com/cobaltspeech/sdk-cubic-cpp
