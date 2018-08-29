@@ -4,3 +4,6 @@
 [submodule "sdk-cubic-cpp"]
 	path = sdk-cubic-cpp
 	url = https://github.com/cobaltspeech/sdk-cubic-cpp
+[submodule "sdk-cubic-java"]
+	path = sdk-cubic-java
+	url = https://github.com/cobaltspeech/sdk-cubic-java
