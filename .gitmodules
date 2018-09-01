@@ -7,3 +7,6 @@
 [submodule "sdk-cubic-java"]
 	path = sdk-cubic-java
 	url = https://github.com/cobaltspeech/sdk-cubic-java
+[submodule "sdk-cubic-python"]
+	path = sdk-cubic-python
+	url = https://github.com/cobaltspeech/sdk-cubic-python.git
