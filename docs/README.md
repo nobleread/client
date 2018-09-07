@@ -169,17 +169,11 @@ Configuration for setting up a Recognizer
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
 | model_id | [string](#string) |  | Unique identifier of the model to use, as obtained from a `Model` message. |
-| audio_encoding | [RecognitionConfig.Encoding](#cobaltspeech.cubic.RecognitionConfig.Encoding) |  | Encoding of audio data sent/streamed through the `RecognitionAudio` messages. For encodings like WAV/MP3 that have headers, the headers are expected to be sent at the beginning of the stream, not in every `RecognitionAudio` message.
-
-If not specified, the default encoding is RAW_LINEAR16.
-
-Depending on how they are configured, server instances of this service may not support all the encodings enumerated above. They are always required to accept RAW_LINEAR16. If any other `Encoding` is specified, and it is not available on the server being used, the recognition request will result in an appropriate error message. |
+| audio_encoding | [RecognitionConfig.Encoding](#cobaltspeech.cubic.RecognitionConfig.Encoding) |  | Encoding of audio data sent/streamed through the `RecognitionAudio` messages. For encodings like WAV/MP3 that have headers, the headers are expected to be sent at the beginning of the stream, not in every `RecognitionAudio` message.  If not specified, the default encoding is RAW_LINEAR16. <br> Depending on how they are configured, server instances of this service may not support all the encodings enumerated above. They are always required to accept RAW_LINEAR16. If any other `Encoding` is specified, and it is not available on the server being used, the recognition request will result in an appropriate error message. |
 | idle_timeout | [google.protobuf.Duration](#google.protobuf.Duration) |  | Idle Timeout of the created Recognizer. If no audio data is received by the recognizer for this duration, ongoing rpc calls will result in an error, the recognizer will be destroyed and thus more audio may not be sent to the same recognizer. The server may impose a limit on the maximum idle timeout that can be specified, and if the value in this message exceeds that serverside value, creating of the recognizer will fail with an error. |
 | enable_word_time_offsets | [bool](#bool) |  | This is an optional field. If this is set to true, the top result will include a list of words and the start time offset (timestamp) and the duration for each of those words. If set to `false`, no word-level timestamps will be returned. The default is `false`. |
 | enable_word_confidence | [bool](#bool) |  | This is an optional field. If this is set to true, the top result will include a list of words and the confidence for those words. If `false`, no word-level confidence information is returned. The default is `false`. |
-| enable_raw_transcript | [bool](#bool) |  | This is an optional field. If this is set to true, the transcripts will be presented as raw output from the recognizer without any formatting rules applied. They will be in all UPPER CASE, numbers and other special entities would be presented as the spoken words. If set to `false`, formatting rules will be applied to all results. The default is `false`.
-
-As an example, if the spoken utterance was `here are four words`: with this field set to `false`: &#34;Here are 4 words&#34; with this field set to &#39;true&#39; : &#34;HERE ARE FOUR WORDS&#34; |
+| enable_raw_transcript | [bool](#bool) |  | This is an optional field. If this is set to true, the transcripts will be presented as raw output from the recognizer without any formatting rules applied. They will be in all UPPER CASE, numbers and other special entities would be presented as the spoken words. If set to `false`, formatting rules will be applied to all results. The default is `false`. <br> As an example, if the spoken utterance was `here are four words`: with this field set to `false`: &#34;Here are 4 words&#34; with this field set to &#39;true&#39; : &#34;HERE ARE FOUR WORDS&#34; |
 | enable_confusion_network | [bool](#bool) |  | This is an optional field. If this is set to true, the results will include a confusion network. If set to `false`, no confusion network will be returned. The default is `false`. If the model being used does not support a confusion network, results may be returned without a confusion network available. If this field is set to `true`, then `enable_raw_transcript` is also forced to be true. |
 
 
@@ -226,9 +220,7 @@ A recognition result corresponding to a portion of audio
 | Field | Type | Label | Description |
 | ----- | ---- | ----- | ----------- |
 | alternatives | [RecognitionAlternative](#cobaltspeech.cubic.RecognitionAlternative) | repeated | An n-best list of recognition hypotheses alternatives |
-| is_partial | [bool](#bool) |  | If this is set to true, it denotes that the result is an interim partial result, and could change after more audio is processed. If unset, or set to false, it denotes that this is a final result and will not change.
-
-Servers are not required to implement support for returning partial results, and clients should generally not depend on their availability. |
+| is_partial | [bool](#bool) |  | If this is set to true, it denotes that the result is an interim partial result, and could change after more audio is processed. If unset, or set to false, it denotes that this is a final result and will not change. <br> Servers are not required to implement support for returning partial results, and clients should generally not depend on their availability. |
 | cnet | [RecognitionConfusionNetwork](#cobaltspeech.cubic.RecognitionConfusionNetwork) |  | If `enable_confusion_network` was set to true in the `RecognitionConfig`, and if the model supports it, a confusion network will be available in the results. |
 
 
