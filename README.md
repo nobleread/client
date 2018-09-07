@@ -33,7 +33,7 @@ Please see their respective readme files for more information on the specific de
 
 ## API Overview
 
-Detailed documents on the API can be found [TODO](./) (Perhaps look into using github pages?)  For those looking for a brief overview, please continue reading.
+Detailed documents on the API can be found [in the docs folder](./docs) For those looking for a brief overview, please continue reading.
 
 The API provides basic information via:
   * `Version()` returns both the server version as well as the cubic ASR engine's version.
