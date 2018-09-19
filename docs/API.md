@@ -1,3 +1,5 @@
+
+
 # Protocol Documentation
 <a name="top"></a>
 
@@ -20,14 +22,10 @@
     - [StreamingRecognizeRequest](#cobaltspeech.cubic.StreamingRecognizeRequest)
     - [VersionResponse](#cobaltspeech.cubic.VersionResponse)
     - [WordInfo](#cobaltspeech.cubic.WordInfo)
-  
     - [RecognitionConfig.Encoding](#cobaltspeech.cubic.RecognitionConfig.Encoding)
-  
-  
     - [Cubic](#cobaltspeech.cubic.Cubic)
-  
-
 - [Scalar Value Types](#scalar-value-types)
+
 
 
 
