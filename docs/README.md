@@ -1,6 +1,6 @@
 ## Overview
 
-The Cubic gRPC Server only defines 4 API functions.  
+The Cubic gRPC Server defines 4 API functions.  
 
 | Method Name | Request Type | Response Type | Description |
 | ----------- | ------------ | ------------- | ------------|
@@ -11,7 +11,7 @@ The Cubic gRPC Server only defines 4 API functions.
 
 ## Object Hierarchy
 
-The following shows the relationships between each object defined in the API requests and responses.  Further information on each item is defined in the [API document](API.md).
+The following shows the relationships between each object defined in the API requests and responses.  Further information on each object is defined in the [API document](API.md).
 
 1. [Version](API.md#cobaltspeech.cubic.Cubic)
     - [VersionResponse](API.md#cobaltspeech.cubic.VersionResponse)
