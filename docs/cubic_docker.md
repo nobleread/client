@@ -29,7 +29,7 @@
 6. Verify the service is running by calling 
    `curl http://localhost:8080/api/version`
 
-   There are [4 API endpoints](API.md).  One of them, StreamingRecognize, requires a stream input, so it must either use websockets or grpc, and therefore can’t be called using curl.
+   There are [4 API endpoints](README.md).  One of them, StreamingRecognize, requires a stream input, so it must either use websockets or grpc, and therefore can’t be called using curl.
 
 7.  If you want to explore the package to see the model files etc,
    `docker exec -it cobalt bash`
