@@ -1,6 +1,6 @@
 ## Overview
 
-The Cubic gRPC Server defines 4 API functions.  
+The Cubic gRPC Server defines 4 API functions callable on port 2727.
 
 | Method Name | Request Type | Response Type | Description |
 | ----------- | ------------ | ------------- | ------------|
