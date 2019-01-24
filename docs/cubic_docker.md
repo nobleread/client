@@ -22,9 +22,9 @@
 
 5. Start the cubic service listening:
 
-   `docker run -p 2727:2727 -p 8080:8080  -name cobalt 494415350827.dkr.ecr.us-east-1.amazonaws.com/cubicsvr-demo-en_us-16`
+   `docker run -p 2727:2727 -p 8080:8080 --name cobalt 494415350827.dkr.ecr.us-east-1.amazonaws.com/cubicsvr-demo-en_us-16`
 
-   That will start listening for grpc commands on port 2727 and http requests on 8080, and will stream the debug log to stdout.  (BTW, you can replace -name cobalt with whatever name you want.  That just provides a way to refer back to the currently running container.)
+   That will start listening for grpc commands on port 2727 and http requests on 8080, and will stream the debug log to stdout.  (BTW, you can replace `--name cobalt` with whatever name you want.  That just provides a way to refer back to the currently running container.)
 
 6. Verify the service is running by calling 
    `curl http://localhost:8080/api/version`
