@@ -56,4 +56,4 @@ Here is the full JSon:
 
 **Result object model**
 
-The result object model is JSON, and described in detail [[ Results-Object-Model.md ]]
+The result object model is JSON, and described in detail in (Results Object Model)[Results-Object-Model.md]
