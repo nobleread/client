@@ -1,3 +1,6 @@
+# Deprecated HTTP API
+### NOTE: this C API has been deprecated in favor of the [gRPC API](https://github.com/cobaltspeech/client).  This documentation is provided to support legacy clients.
+
 # Entry points
 
 There are two entry points: /api, and /recognize. The /api entry point is used to create and delete objects with state and query attributes. The /recognize entry point is used to send audio, send events to control recognition, and retrieve results. All requests to the API are POST, and all successful returns are JSON.
