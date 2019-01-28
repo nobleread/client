@@ -1,6 +1,5 @@
-**Welcome to the Cobalt Client Wiki!**
-
-See the links to the right to navigate.
+# Deprecated Python client
+### NOTE: this sample code has been deprecated in favor of the [gRPC API](https://github.com/cobaltspeech/client).  This documentation is provided to support legacy clients.
 
 This package contains client code and API documentation for Cobalt's ASR (automatic speech recognition) service. Cobalt will provide interested customers an endpoint URL for a demo ASR model to use with this client package. Please contact us at http://cobaltspeech.com/contact-us.html to obtain it and use that URL whenever this documentation includes the <URL> placeholder.
 
