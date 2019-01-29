@@ -14,7 +14,7 @@ Below is a list of our metrics focused on measuring and breaking latency to acti
 | --- | ---
 |stt_latency_msec | The engine’s best guess on the latency the customer experiences for this utterance.
 |delivery_latency_msec | Amount of latency attributable to how the customer delivered audio.
-|endpoint_latency_msec | Amount of latency attributable to how much time we spent detecting end-of-speech.
+|endpoint_latency_msec | Amount of latency attributable to detecting end-of-speech.
 
 
 **Diagnostic metrics:**
