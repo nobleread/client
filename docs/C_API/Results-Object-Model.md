@@ -1,6 +1,6 @@
-This page documents the Cobalt Runtime results object model. The goal of the design is to create an object model that is intuitive, is programming language agnostic, yet extensible to future iterations.
+This page documents the Cubic results object model. The goal of the design is to create an object model that is intuitive, is programming language agnostic, yet extensible to future iterations.
 
-The object model is encoded in JSON, making the object agnostic and easily accessible across modern languages. Clients of Cobalt Runtime may transmit this model across machines as-is, or wrap this model in additional JSON structures.
+The object model is encoded in JSON, making the object agnostic and easily accessible across modern languages. Clients of Cubic may transmit this model across machines as-is, or wrap this model in additional JSON structures.
 
 **Top Level Structure**: the top level structure of the JSON contains these fields
 
