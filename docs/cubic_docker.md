@@ -5,7 +5,7 @@ You should have received a link to an image file in AWS S3.  This link will expi
 1. Download with the AWS CLI if you have it, or with curl:
    ```
    URL="the url sent by Cobalt"
-   IMAGE_NAME="name of downloaded file (should end with the same extension, usually bz2)"
+   IMAGE_NAME="name you want to give the file (should end with the same extension, usually bz2)"
    curl $URL -L -o $IMAGE_NAME
    ```
    
