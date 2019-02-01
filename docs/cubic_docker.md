@@ -27,3 +27,21 @@ You should have received a link to an image file in AWS S3.  This link will expi
 5.  If you want to explore the package to see the model files etc,
    `docker exec -it cobalt bash`
    opens the bash terminal on the previously run image.  Model files are located in the /model directory.
+   
+## Contents of the docker image
+### Base docker image ### 
+debian-stretch-slim
+
+### Additional dependency ###
+(installed with yum install on centos or apt-get on ubuntu): libgfortran3
+
+### Cobalt-specific files ###
+- **cubicsvr** - binary for performing Automatic Speech Recognition
+- **model.config** - top-level config
+- **am/nnet3_online/final.mdl** - this is the acoustic model
+- **am/nnet3_online/conf/online_cmvn.conf** - feature extraction parameters for the features fed into the GMM model used for i-vector statistics accumulation.
+- **am/nnet3_online/conf/splice.conf** - GMM feature context when accumulating statistics for i-vector accumulation. 
+- **am/nnet3_online/ivector_extractor/*** - Kaldi configuration files related to ivectors  
+- **graph/HCLG.fst** - the decoding graph: the combination of the AMs transition graph, the lexicon, and the language model
+- **graph/words.txt** - an integer to word mapping, needed because the output of the HCLG graph contains only integer symbol IDs
+- **graph/phones/word_boundary.int** - this is needed only when confusion network output is requested, it tells the decoder which phones are at word boundaries
