@@ -18,3 +18,5 @@
 
    `docker pull 494415350827.dkr.ecr.us-east-1.amazonaws.com/cubicsvr-demo-en_us-16`
    
+5. Follow the rest of the instructions from [the docker instructions](cubic_docker.md)
+   
