@@ -45,3 +45,4 @@ debian-stretch-slim
 - **graph/HCLG.fst** - the decoding graph: the combination of the AMs transition graph, the lexicon, and the language model
 - **graph/words.txt** - an integer to word mapping, needed because the output of the HCLG graph contains only integer symbol IDs
 - **graph/phones/word_boundary.int** - this is needed only when confusion network output is requested, it tells the decoder which phones are at word boundaries
+- **formatter/*** - if present, provides a model for text formatting of the output (e.g. capitalization). This formatter is only used if specified in model.config.
